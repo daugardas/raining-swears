@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: #4d5576;
+  color: white;
+  font-family: 'Cutive Mono', monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  height: 100%;
+}
+
+.clouds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  min-height: 200px;
+  position: relative;
+}
+
+.clouds i {
+  position: absolute;
+}
+
+.cloud-1 {
+  top: 0;
+  left: 0;
+  color: #cbe4ff;
+  font-size: 200px;
+}
+
+.cloud-2 {
+  z-index: -1;
+  font-size: 180px;
+  left: 50px;
+  top: 5px;
+  color: #7092c3;
+}
+
+.curse-rain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 115px;
+  font-size: 18px;
+}
+
+.letters {
+  display: grid;
+  grid-auto-rows: 30px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 600px) {
+  /* larger screens */
+  .container {
+    width: 450px;
+  }
+
+  /* cloud styles */
+  .clouds {
+    width: 312.5px;
+    min-height: 250px;
+  }
+  .cloud-1 {
+    font-size: 250px;
+  }
+  .cloud-2 {
+    font-size: 235px;
+  }
+
+  /* rain styles */
+  .curse-rain {
+    width: 125px;
+    font-size: 21px;
+  }
+}
